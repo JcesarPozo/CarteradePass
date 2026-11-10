@@ -3,10 +3,14 @@ import RegisterServiceWorker from "./register-sw";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Clave — bóveda local",
-  description: "Bóveda local de credenciales cifrada en tu dispositivo",
+  title: "Clave — Bóveda local",
+  description: "Bóveda local de credenciales cifrada en tu dispositivo con soporte sin conexión y respaldos.",
   manifest: "/manifest.webmanifest",
   appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "Clave" },
+  openGraph: {
+    title: "Clave — Bóveda local",
+    description: "Bóveda local de credenciales cifrada en tu dispositivo con soporte sin conexión y respaldos.",
+  },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
