@@ -231,7 +231,7 @@ export default function HelpGuide() {
                       <strong>Bloqueo inmediato:</strong> Pulsa «Bloquear bóveda» en la barra lateral o el icono ⌑ en la barra móvil para cerrar la sesión al instante. Las claves criptográficas se purgan de la memoria RAM del navegador.
                     </li>
                     <li>
-                      <strong>Soporte sin conexión (PWA):</strong> Clave puede instalarse como aplicación web progresiva y funciona al 100% sin conexión a internet.
+                      <strong>Instalación PWA y soporte sin conexión:</strong> Pulsa el botón «📲 Instalar» en la barra superior, en el menú móvil o en Ajustes para añadir Clave a tu pantalla de inicio en Android, iPhone/iPad u ordenador. Se ejecuta en ventana propia y funciona al 100% sin conexión a internet.
                     </li>
                   </ul>
                 </article>

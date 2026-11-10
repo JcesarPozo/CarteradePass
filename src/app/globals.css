@@ -86,3 +86,32 @@ body{background:#08120c;color:var(--ink)}
 .auth-footer{margin-top:24px;border-top:0;padding-top:0;flex-direction:column;align-items:center;text-align:center;gap:8px}
 .auth-footer .app-footer-brand{justify-content:center}
 @media(max-width:850px){.app-footer{margin-top:36px;padding-bottom:12px;flex-direction:column;align-items:flex-start;gap:10px}.auth-footer{align-items:center}}
+.brand-app-icon{width:34px;height:34px;border-radius:10px;object-fit:cover;border:1px solid #2b4534;background:#112018;box-shadow:0 2px 8px rgba(0,0,0,0.35);flex-shrink:0}
+.mobile-head-actions{display:flex;align-items:center;gap:8px}
+.pwa-install-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:9px 13px;border-radius:9px}
+.pwa-compact-btn{display:inline-flex;align-items:center;gap:5px;background:#163823;border:1px solid #295738;color:#a2edbc;padding:6px 11px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;transition:background .15s ease}
+.pwa-compact-btn:hover{background:#1f4d30;color:#fff}
+.pwa-btn-icon{font-size:14px;line-height:1}
+.auth-install-box{margin-top:14px;display:flex;justify-content:center}
+.settings-pwa-card{margin-bottom:24px}
+.pwa-card-banner{background:radial-gradient(circle at top left,#183f27,#0e1c13);border:1px solid #285437;border-radius:14px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 4px 16px rgba(0,0,0,0.25)}
+.pwa-card-content{display:flex;align-items:center;gap:14px;min-width:0;flex:1}
+.pwa-card-icon-wrap{flex-shrink:0}
+.pwa-card-app-icon{width:48px;height:48px;border-radius:12px;object-fit:cover;border:1px solid #366d48;box-shadow:0 4px 12px rgba(0,0,0,0.4)}
+.pwa-card-title{margin:0 0 4px;font-size:15px;font-weight:700;color:#e3efe7}
+.pwa-card-sub{margin:0;font-size:12px;color:var(--muted);line-height:1.45}
+.pwa-card-action{flex-shrink:0;padding:10px 16px;font-size:13px;white-space:nowrap}
+.pwa-installed-badge{display:flex;align-items:center;gap:8px;background:#142e1d;border:1px solid #2a5a39;color:#78dca0;padding:10px 14px;border-radius:10px;font-size:12px;font-weight:600;margin-bottom:20px}
+.pwa-installed-icon{display:grid;place-items:center;width:18px;height:18px;background:#24834c;color:#fff;border-radius:50%;font-size:11px;font-weight:800}
+.pwa-guide-modal{width:min(500px,100%);padding:22px;background:#0e1c13;border:1px solid #2b4534}
+.pwa-guide-head{display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:16px}
+.pwa-modal-app-icon{width:52px;height:52px;border-radius:13px;object-fit:cover;border:1px solid #2e593c}
+.pwa-guide-head h3{margin:0 0 4px;font-size:17px;color:#e3efe7;font-weight:700}
+.pwa-guide-head .modal-sub{margin:0;font-size:12px}
+.pwa-guide-platforms{display:flex;flex-direction:column;gap:12px;margin-bottom:18px}
+.pwa-platform-card{background:#09150e;border:1px solid #1c3325;border-radius:12px;padding:14px}
+.pwa-platform-title{font-size:13px;font-weight:700;color:#8bea9e;margin-bottom:8px}
+.pwa-steps-list{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;color:#b5c8ba;line-height:1.5}
+.pwa-steps-list strong{color:#e3efe7}
+@media(max-width:850px){.pwa-card-banner{flex-direction:column;align-items:flex-start}.pwa-card-action{width:100%;text-align:center}}
+
