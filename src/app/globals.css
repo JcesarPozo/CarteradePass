@@ -114,4 +114,12 @@ body{background:#08120c;color:var(--ink)}
 .pwa-steps-list{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;color:#b5c8ba;line-height:1.5}
 .pwa-steps-list strong{color:#e3efe7}
 @media(max-width:850px){.pwa-card-banner{flex-direction:column;align-items:flex-start}.pwa-card-action{width:100%;text-align:center}}
+.vault-lock-btn{display:inline-flex;align-items:center;gap:8px;background:#102619;border:1px solid #285437;color:#a7eec1;padding:5px 13px 5px 6px;border-radius:12px;font-weight:700;font-size:13px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,0.35);transition:all .15s ease;user-select:none}
+.vault-lock-btn:hover{background:#183b26;border-color:#418a5c;color:#ffffff;transform:translateY(-1px);box-shadow:0 4px 14px rgba(33,109,77,0.45)}
+.vault-lock-btn-icon{width:28px;height:28px;border-radius:8px;object-fit:cover;border:1px solid #366d48;background:#08120c;flex-shrink:0;box-shadow:0 0 10px rgba(76,170,109,0.4)}
+.vault-lock-btn-text{font-size:12px;letter-spacing:0.2px}
+.sidebar-lock-btn{display:flex;align-items:center;gap:12px;width:100%;color:#a4b8a9}
+.sidebar-lock-icon{width:22px;height:22px;border-radius:6px;object-fit:cover;border:1px solid #285437;flex-shrink:0}
+.mobile-lock-btn{padding:4px 10px 4px 5px;border-radius:10px}
+.mobile-lock-btn .vault-lock-btn-icon{width:26px;height:26px}
 
