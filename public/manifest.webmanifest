@@ -4,13 +4,20 @@
   "short_name": "Clave",
   "description": "Bóveda local de credenciales cifrada en tu dispositivo con soporte sin conexión y respaldos.",
   "lang": "es",
-  "start_url": "/",
+  "dir": "ltr",
+  "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "window-controls-overlay"],
   "orientation": "portrait-primary",
   "background_color": "#08120c",
   "theme_color": "#08120c",
   "categories": ["utilities", "security", "productivity"],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "handle_links": "preferred",
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -29,6 +36,38 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Bóveda local de credenciales en escritorio"
+    },
+    {
+      "src": "/screenshots/screenshot-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Gestión cifrada de claves en móvil"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Todas las credenciales",
+      "short_name": "Credenciales",
+      "description": "Ver todas las contraseñas guardadas",
+      "url": "/?view=Todo",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Ajustes y Respaldos",
+      "short_name": "Ajustes",
+      "description": "Exportar o importar respaldos cifrados",
+      "url": "/?view=Ajustes",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

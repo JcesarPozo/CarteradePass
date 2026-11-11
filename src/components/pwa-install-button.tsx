@@ -106,8 +106,8 @@ export default function PWAInstallButton({ variant = "button", className = "" }:
                 />
               </div>
               <div>
-                <h3 id="pwa-guide-title">Instalar Clave en tu dispositivo</h3>
-                <p className="modal-sub">Acceso rápido desde tu pantalla de inicio y 100% disponible sin internet.</p>
+                <h3 id="pwa-guide-title">Instalar Clave como aplicación independiente</h3>
+                <p className="modal-sub">Se ejecuta en su propia ventana sin barras ni pestañas del navegador, 100% offline.</p>
               </div>
             </div>
 
@@ -117,41 +117,47 @@ export default function PWAInstallButton({ variant = "button", className = "" }:
                   <div className="pwa-platform-title">📱 En iPhone o iPad (Safari)</div>
                   <ol className="pwa-steps-list">
                     <li>
-                      Toca el botón <strong>Compartir</strong> (icono de cuadrado con flecha hacia arriba) en la barra de Safari.
+                      Abre esta página en el navegador <strong>Safari</strong> (en iOS solo Safari permite crear aplicaciones autónomas a pantalla completa sin marco de navegador).
                     </li>
                     <li>
-                      Desplázate hacia abajo y selecciona <strong>«Añadir a pantalla de inicio»</strong>.
+                      Toca el botón <strong>Compartir</strong> (cuadrado con flecha hacia arriba) en la barra de Safari.
                     </li>
                     <li>
-                      Pulsa <strong>«Añadir»</strong> en la esquina superior derecha.
+                      Desplázate hacia abajo y pulsa <strong>«Añadir a pantalla de inicio»</strong>.
+                    </li>
+                    <li>
+                      Al abrir el icono desde tu pantalla de inicio, Clave se abrirá como app a pantalla completa sin la barra ni pestañas de Safari.
                     </li>
                   </ol>
                 </div>
               ) : (
                 <>
                   <div className="pwa-platform-card">
-                    <div className="pwa-platform-title">🤖 En Android (Chrome / Edge / Firefox)</div>
+                    <div className="pwa-platform-title">🤖 En Android (Chrome / Edge)</div>
                     <ol className="pwa-steps-list">
                       <li>
-                        Toca el menú de tres puntos (<strong>⋮</strong>) en la esquina superior derecha del navegador.
+                        Pulsa el botón <strong>«Instalar aplicación»</strong> en esta pantalla.
                       </li>
                       <li>
-                        Selecciona <strong>«Instalar aplicación»</strong> o <strong>«Añadir a pantalla de inicio»</strong>.
+                        O en el menú de tres puntos (<strong>⋮</strong>), selecciona <strong>«Instalar aplicación»</strong> (no «Añadir acceso directo»).
                       </li>
                       <li>
-                        Confirma pulsando <strong>«Instalar»</strong>.
+                        Android registrará Clave como app nativa (WebAPK) en tu cajón de aplicaciones, abriéndose en ventana exclusiva sin el navegador.
                       </li>
                     </ol>
                   </div>
 
                   <div className="pwa-platform-card">
-                    <div className="pwa-platform-title">💻 En Ordenador (Chrome / Edge / Brave)</div>
+                    <div className="pwa-platform-title">💻 En Ordenador (Windows / Mac / Linux)</div>
                     <ol className="pwa-steps-list">
                       <li>
-                        Busca el icono de instalación (<strong>⊕</strong> o pantalla con flecha) en la barra de direcciones del navegador.
+                        Haz clic en el icono de instalación (pantalla con flecha) en la barra de direcciones de Chrome o Edge.
                       </li>
                       <li>
-                        O abre el menú del navegador (<strong>⋮</strong>) y haz clic en <strong>«Instalar Clave»</strong>.
+                        O abre el menú (<strong>⋮</strong>) y selecciona <strong>«Instalar Clave»</strong>.
+                      </li>
+                      <li>
+                        Se iniciará en su propia ventana de escritorio independiente, sin barra de direcciones y con icono en la barra de tareas o Dock.
                       </li>
                     </ol>
                   </div>

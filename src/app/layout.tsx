@@ -7,7 +7,16 @@ export const metadata: Metadata = {
   title: "Clave — Bóveda local",
   description: "Bóveda local de credenciales cifrada en tu dispositivo con soporte sin conexión y respaldos.",
   manifest: "/manifest.webmanifest",
-  appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "Clave" },
+  applicationName: "Clave",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Clave",
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+  },
   openGraph: {
     title: "Clave — Bóveda local",
     description: "Bóveda local de credenciales cifrada en tu dispositivo con soporte sin conexión y respaldos.",
@@ -25,11 +34,24 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: "#08120c",
   colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
+      <head>
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Clave" />
+        <meta name="application-name" content="Clave" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+      </head>
       <body>
         <RegisterServiceWorker />
         {children}
