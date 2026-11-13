@@ -17,7 +17,7 @@ export default function AppFooter({ className = "" }: { className?: string }) {
         <span className="app-footer-title">Borrach@s y mas...</span>
       </div>
       <p className="app-footer-rights">
-        © {currentYear} Borrach@s y mas... · Todos los derechos reservados.
+        © {currentYear} · Todos los derechos reservados.
       </p>
     </footer>
   );

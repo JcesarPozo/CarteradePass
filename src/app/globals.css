@@ -122,4 +122,5 @@ body{background:#08120c;color:var(--ink)}
 .sidebar-lock-icon{width:22px;height:22px;border-radius:6px;object-fit:cover;border:1px solid #285437;flex-shrink:0}
 .mobile-lock-btn{padding:4px 10px 4px 5px;border-radius:10px}
 .mobile-lock-btn .vault-lock-btn-icon{width:26px;height:26px}
+@media(max-width:850px){.desktop-lock-btn{display:none}.topbar{justify-content:flex-end;margin-bottom:16px}.top-actions{width:100%;justify-content:flex-end;flex-wrap:wrap}}
 
